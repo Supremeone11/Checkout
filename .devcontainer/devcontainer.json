@@ -1,0 +1,30 @@
+{
+  "name": "Advance Checkout Integration",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "onCreateCommand": "bash ./.devcontainer/welcome-message.sh",
+  "remoteUser": "root",
+  "postCreateCommand": "npm install",
+  "postAttachCommand": {
+	"Start server": "npm start"
+  },
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  "forwardPorts": [
+	8888
+  ],
+  "portsAttributes": {
+	"8888": {
+		"label": "Preview of Advanced Checkout Flow",
+		"onAutoForward": "openBrowserOnce"
+	}
+  },
+  "secrets": {
+    "CLIENT_ID": {
+      "description": "Sandbox client ID of the application.",
+      "documentationUrl": "https://developer.paypal.com/api/rest/"
+    },
+    "APP_SECRET": {
+      "description": "Sandbox secret of the application.",
+      "documentationUrl": "https://developer.paypal.com/api/rest/"
+    }
+  }
+}
