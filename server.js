@@ -12,7 +12,7 @@ app.get("/", async (req, res) => {
   const clientId = process.env.CLIENT_ID;
   try {
     const clientToken = await paypal.generateClientToken();
-    res.render("checkout", { clientId, EI9p5ny8lFxWeWnk6AsB5hyHPTnSEoRkIkq33009WlnhJ8rRhWpT8aDmvWftR8C5u0xYQ67WuttzQnrv });
+    res.render("checkout", { AS_-NlrYn0Y4j95hpfDdOWta4QaSghsKqaiFFBdIazZB_1IQyMwN6MLOegrg8RyaGWhM87kufkMX9hkD, EI9p5ny8lFxWeWnk6AsB5hyHPTnSEoRkIkq33009WlnhJ8rRhWpT8aDmvWftR8C5u0xYQ67WuttzQnrv });
   } catch (err) {
     res.status(500).send(err.message);
   }
