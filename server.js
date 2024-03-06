@@ -12,7 +12,7 @@ app.get("/", async (req, res) => {
   const clientId = process.env.CLIENT_ID;
   try {
     const clientToken = await paypal.generateClientToken();
-    res.render("checkout", { clientId, clientToken });
+    res.render("checkout", { clientId, EI9p5ny8lFxWeWnk6AsB5hyHPTnSEoRkIkq33009WlnhJ8rRhWpT8aDmvWftR8C5u0xYQ67WuttzQnrv });
   } catch (err) {
     res.status(500).send(err.message);
   }
