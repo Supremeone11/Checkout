@@ -1,12 +1,12 @@
 import fetch from "node-fetch";
 
 // set some important variables
-const { AS_-NlrYn0Y4j95hpfDdOWta4QaSghsKqaiFFBdIazZB_1IQyMwN6MLOegrg8RyaGWhM87kufkMX9hkD, APP_SECRET } = process.env;
+const { AS_-NlrYn0Y4j95hpfDdOWta4QaSghsKqaiFFBdIazZB_1IQyMwN6MLOegrg8RyaGWhM87kufkMX9hkD, EI9p5ny8lFxWeWnk6AsB5hyHPTnSEoRkIkq33009WlnhJ8rRhWpT8aDmvWftR8C5u0xYQ67WuttzQnrv } = process.env;
 const base = "https://api-m.sandbox.paypal.com";
 
 // call the create order method
 export async function createOrder() {
-  const purchaseAmount = "100.00"; // TODO: pull prices from a database
+  const purchaseAmount = "150.00"; // TODO: pull prices from a database
   const accessToken = await generateAccessToken();
   const url = `${base}/v2/checkout/orders`;
   const response = await fetch(url, {
