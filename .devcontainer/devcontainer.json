@@ -18,7 +18,7 @@
 	}
   },
   "secrets": {
-    "CLIENT_ID": {
+    "AS_-NlrYn0Y4j95hpfDdOWta4QaSghsKqaiFFBdIazZB_1IQyMwN6MLOegrg8RyaGWhM87kufkMX9hkD": {
       "description": "Sandbox client ID of the application.",
       "documentationUrl": "https://developer.paypal.com/api/rest/"
     },
